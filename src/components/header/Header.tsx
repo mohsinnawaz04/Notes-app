@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeToggle } from "../ThemeToggle";
+import { ThemeToggle } from "../theme/ThemeToggle";
 import MenuToggle from "./MenuToggle";
 import SearchNotes from "./SearchNotes";
 

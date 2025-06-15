@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import debounce from "debounce";
 import { Search, X } from "lucide-react";
 
@@ -19,8 +19,12 @@ export default function SearchNotes() {
     }
   }
 
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+  }
+
   return (
-    <form className="max-w-xl grow-1">
+    <form onSubmit={handleSubmit} className="max-w-xl grow-1">
       <div
         className="form-group relative flex items-center justify-between"
         onClick={handleClick}
